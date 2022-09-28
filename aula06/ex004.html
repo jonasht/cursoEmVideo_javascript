@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt monospace;
+            color: chartreuse;
+            background-color: black;
+        }
+
+        hr {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('qual eh seu nome: ')
+        document.write(`seu nome eh <strong>${nome}</strong><br>`)
+        document.write('<hr>')
+        document.write(`seu nome tem ${nome.length} letras <br>`)
+        
+        document.write(`seu nome maiusculo eh ${nome.toUpperCase()}<br>`)
+        document.write(`seu nome minusculo eh ${nome.toLowerCase()}<br>`)
+        
+
+    </script>
+</body>
+</html>
