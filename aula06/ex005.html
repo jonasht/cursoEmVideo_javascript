@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passos com dum</title>
+    <style>
+        body {
+            background-color: black;
+            color: chartreuse;
+            font: normal 18 Arial;
+
+        }
+
+        hr {
+            background-color: yellowgreen;
+            border: 10px solid chartreuse;
+            /* color: chartreuse; */
+            height: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando estudos com DOM</h1>
+    <p>aqui vai o resultado</p>
+    <hr>
+    <p>aprendendo a usar o <strong>DOM</strong> em javascript</p>
+
+    <div id="msg">clique em mim</div>
+    <hr>
+    <script>
+        corpo = window.document.body
+        corpo.style.background = 'gray'
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementsByTagName('p')[1]
+        // window.document.write('esta escrito assim: ' + p1.innerText)
+        p1.style.color = 'lightgreen'
+
+        // window.document.write(p2.innerText) <br>
+        window.document.write(p2.innerHTML) // innerHTML tras a string formatado com os <> do html
+        
+        var d = window.document.getElementById('msg')
+        window.document.write(d)
+        d.style.background = 'lightblue'
+        d.style.color = 'red'
+        d.innerText = 'estou aguardando ...'
+        window.document.getElementById('msg', 'aqui')
+
+    </script>
+</body>
+</html>
